@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizapplication.ResultsdisplayController">
+   <children>
+      <AnchorPane layoutX="-5.0" prefHeight="400.0" prefWidth="606.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="606.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" scaleY="1.5">
+               <image>
+                  <Image url="@../../../Login%20Background.jpg" />
+               </image>
+            </ImageView>
+             <TableView fx:id="resultsTable" layoutX="50.0" layoutY="40.0" prefHeight="319.0" prefWidth="204.0">
+                 <columns>
+                     <TableColumn fx:id="studentsColumn" prefWidth="99.33333969116211" text="Students" />
+                     <TableColumn fx:id="resultsColumn" prefWidth="99.33334350585938" text="Results" />
+                 </columns>
+             </TableView>
+            <Button fx:id="BackButton" layoutX="491.0" layoutY="28.0" mnemonicParsing="false" onAction="#handlebackbutton" text="SignOut" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

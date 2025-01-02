@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizapplication.LoginController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" scaleY="1.5">
+         <image>
+            <Image url="@../../../Login%20Background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="29.0" layoutY="48.0" text="Login" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="25.0" layoutY="104.0" prefHeight="264.0" prefWidth="239.0">
+         <children>
+            <TextField fx:id="UsernameTextbox" layoutX="32.0" layoutY="57.0" prefHeight="25.0" prefWidth="169.0" />
+            <Label layoutX="42.0" layoutY="40.0" text="Username" textFill="WHITE" />
+            <PasswordField fx:id="PasswordTextbox" layoutX="32.0" layoutY="120.0" prefHeight="25.0" prefWidth="169.0" />
+            <Label layoutX="42.0" layoutY="103.0" text="Password" textFill="WHITE" />
+            <Button layoutX="155.0" layoutY="189.0" mnemonicParsing="false" onAction="#handleloginbutton" text="Login" />
+            <Button layoutX="26.0" layoutY="189.0" mnemonicParsing="false" onAction="#handlesignupbutton" text="Signup" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

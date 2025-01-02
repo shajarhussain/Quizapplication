@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizapplication.AdminDashboardController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="606.0" layoutX="-6.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" scaleY="1.5">
+         <image>
+            <Image url="@../../../Login%20Background.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="TitleLabel" layoutX="29.0" layoutY="28.0" prefHeight="47.0" prefWidth="185.0" text="ADMIN DASHBOARD" textFill="WHITE" />
+      <Button fx:id="viewResultButton" layoutX="43.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleviewResults" text="VIEW RESULTS" visible="false" />
+      <TableView fx:id="resulttable" layoutX="37.0" layoutY="110.0" prefHeight="267.0" prefWidth="221.0">
+        <columns>
+          <TableColumn fx:id="UsernameColumn" prefWidth="98.66665649414062" text="Username" />
+          <TableColumn fx:id="ResultColumn" prefWidth="98.66668701171875" text="Results" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="BackButton" layoutX="501.0" layoutY="38.0" mnemonicParsing="false" onAction="#handlebackbutton" text="Sign Out" />
+   </children>
+</AnchorPane>

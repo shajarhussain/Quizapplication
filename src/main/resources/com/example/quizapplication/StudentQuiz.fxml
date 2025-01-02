@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizapplication.StudentQuizController">
+   <ImageView fx:id="questionImage" fitHeight="400.0" fitWidth="600.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" scaleY="1.5">
+      <Image url="@../../../Login%20Background.jpg" />
+   </ImageView>
+   <AnchorPane layoutY="1.0" prefHeight="410.0" prefWidth="306.0">
+      <RadioButton fx:id="optionA" layoutX="23.0" layoutY="157.0" mnemonicParsing="false" text="Option A" textFill="WHITE" />
+      <RadioButton fx:id="optionB" layoutX="23.0" layoutY="205.0" mnemonicParsing="false" text="Option B" textFill="WHITE" />
+      <RadioButton fx:id="optionC" layoutX="22.0" layoutY="253.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="113.0" text="Option C" textFill="WHITE" />
+      <RadioButton fx:id="optionD" layoutX="23.0" layoutY="305.0" mnemonicParsing="false" text="Option D" textFill="WHITE" />
+      <Label fx:id="questionLabel" layoutX="9.0" layoutY="23.0" text="Question goes here" textFill="WHITE" />
+      <!-- Submit Button is hidden by default -->
+      <Button fx:id="submitButton" layoutX="14.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleSubmitButton" text="Submit" visible="false" />
+      <!-- Next Button is visible -->
+      <Button fx:id="nextButton" layoutX="153.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleNextButton" text="Next" />
+      <Label fx:id="timerLabel" layoutX="251.0" layoutY="59.0" text="Label" textFill="#fdfdfd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </AnchorPane>
+   <Button fx:id="BackButton" layoutX="515.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+</AnchorPane>
